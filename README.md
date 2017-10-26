@@ -2,7 +2,7 @@
 1. [Introduction](README.md#introduction)
 2. [Dependencies](README.md#dependencies)
 3. [Class Information](README.md#class-information)
-4. [Possible Improvements](README.md#possible-improvments)
+4. [Possible Improvements](README.md#possible-improvements)
 
 # Introduction
 This is my solution on the data cleaning task for [Federal Election Commission](http://classic.fec.gov/finance/disclosure/ftpdet.shtml). The input file should be strictly formatted under [official standart](http://classic.fec.gov/finance/disclosure/metadata/DataDictionaryContributionsbyIndividuals.shtml). The output file are structured as follows:
@@ -69,4 +69,4 @@ We update the sum at each insertion, so that aquiring sum cost O(1)
 # Possible Improvements
 1. There's a risk to be OOM, using trie instead of hashmap will slightly decrease the memory usage. A more throughly solution is to use database, but performance will drop severely.
 2. The system may have a insufficient support on Python 3.x or unicode characters, which should be improved furthermore.
-3. I failed to download testcase from FEC, so it there might be couner cases which is not considered.
+3. I didn't quite understand what is written on the official website, just suppose that all amount less than 200$ are invalid for both chart.
